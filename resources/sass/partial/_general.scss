@@ -1,12 +1,42 @@
 .top-header {
     width: 100%;
-    line-height: 3rem;
-    background-color: #4FA7FB;
-    .container {
+    height: 2rem;
+    line-height: 2rem;
+    background-color: #0282F9;
         .cont-span {
             position: absolute;
             right: 0;
+            color: white;
         }
+}
+
+.bottom-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .navbar {
+        display: flex;
+        li {
+            list-style: none;
+            margin-right: 1.5rem;
+            a {
+                text-decoration: none;
+                color: black;
+                display: inline-block;
+                padding: 2rem 0;
+            }
+        }
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    .card {
+        max-width: calc(100% / 6 - 1.5rem);
     }
 }
 

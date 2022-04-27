@@ -4,15 +4,19 @@
 
 @section('content')
     {{-- @dd($comics) --}}
-    <ul>
+    <div class="container">
+        <div class="cards">
+            @foreach ($comics as $item)
+                <div class="card">
 
-        @foreach ($comics as $item)
 
-            <li>
-               {{ $item['title'] }}
-            </li>
+                    <img src="{{ $item['thumb'] }}" alt="{{ $item['title'] }}">
 
-        @endforeach
-
-    </ul>
+                    <h3>
+                        {{ $item['series'] }}
+                    </h3>
+                </div>
+            @endforeach
+        </div>
+    </div>
 @endsection
